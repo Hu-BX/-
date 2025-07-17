@@ -19,23 +19,15 @@
     pip install Flask Flask-SQLAlchemy Flask-Cors
     ```
 
-## 3. 初始化数据库
-
-1.  在 `backend` 目录下，运行以下命令来创建数据库和表：
-    ```bash
-    python database.py
-    ```
-    运行成功后，您应该会在 `backend` 目录下看到一个 `kerrymed.db` 文件。
-
-## 4. 运行后端服务
+## 3. 运行后端服务
 
 1.  在 `backend` 目录下，运行以下命令来启动 Flask 后端服务：
     ```bash
     python app.py
     ```
-    服务默认会在 `http://localhost:5000` 上运行。
+    该命令将首先创建数据库和表（如果它们尚不存在），然后启动后端服务。服务默认会在 `http://localhost:5000` 上运行。
 
-## 5. 访问网站
+## 4. 访问网站
 
 1.  在浏览器中打开 `kerrymed/frontend` 目录下的 `index.html` 文件，即可访问网站首页。
 
